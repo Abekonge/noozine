@@ -15,11 +15,10 @@
        }
    </style>
 </head>
-<body flex layout="column" ng-app="noozine">
+<body flex layout="column" ng-app="noozine" ng-controller="zineController">
 
-  <p flex="10" layout layout-align="center center" style="background-color:blue;">CMF & Junkie McGregor præsenterer</p>
-
-  <h1 flex layout="column" layout-align="center center" ng-model="$scope.year" style="font-size:10rem;background-color:green;">2016</h1>
+  <p flex="10" layout layout-align="center center" style="background-color:blue;">CMF og Junkie McGregor præsenterer</p>
+  <h1 flex layout="column" layout-align="center center" ng-click="add()" style="font-size:10rem;background-color:green;">{{ year }}</h1>
 
   <div flex="10" layout="column" layout-align="center center" style="background-color:green;">
     <p style="font-size:2rem; font-weight:bold"> | </p>
@@ -31,5 +30,6 @@
   <script src="node_modules/angular-animate/angular-animate.js"></script>
   <script src="node_modules/angular-aria/angular-aria.js"></script>
   <script src="node_modules/angular-material/angular-material.js"></script>
+  <script src="js/noozine.js"></script>
 </body>
 </html>
