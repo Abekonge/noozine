@@ -19,18 +19,65 @@
 </head>
 <body flex layout="column" ng-app="noozine" ng-controller="zineController">
 
-  <p flex="5" layout layout-align="center center" style="background-color:blue;">Center for Militant Futurologi</p>
-  <p flex="5" layout layout-align="center center" style="background-color:blue;">noozine#1</p>
+  <md-content>
+</md-content>
+    <p flex="noshrink" layout layout-align="center center" style="background-color:blue; height:5%;"><strong>Center for Militant Futurologi</strong></p>
+    <p flex="noshrink" layout layout-align="center center" style="background-color:blue; height:5%;"><strong>noozine#1</strong></p>
 
-  <div flex="80" layout="column" ng-click="add()" style="background-color:green;">
-    <h1 flex layout="column" layout-align="end center"  >{{ year }}</h1>
-    <h2 flex layout="column" layout-align="start center"  >PLANEN</h2>
-  </div>
+    <div flex="noshrink" layout="column" ng-click="add()" style="background-color:green; height:80%;">
+      <h1 flex layout="column" layout-align="end center"  >{{ year }}</h1>
+      <h2 flex layout="column" layout-align="start center"  >PLANEN</h2>
+    </div>
 
-  <div flex="10" layout="column" layout-align="center center" style="background-color:green;">
-    <p style="font-size:2rem; font-weight:bold"> | </p>
-    <p> scroll </p>
-  </div>
+    <div flex="noshrink" layout="column" layout-align="center center" style="background-color:green;  height:10%;">
+      <p style="font-size:2rem; font-weight:bold"> | </p>
+      <p> <strong>scroll</strong> </p>
+    </div>
+
+    <div id="frontmatter" layout-gt-md="row" layout-align="center start">
+
+        <div id="intro" class="text" flex-gt-md="40" style="margin: 0 5% 0 0">
+          <h1>Intro</h1>
+
+          <p>Vi inviterer alle med håb og drømme for fremtiden til en kollektiv tidsrejse. Vi inviterer alle til at bidrage med deres vildeste visioner for, hvordan verden kunne tage sig ud i år 2121.</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Mens stater og finansielle aktører opererer med korte mekaniske fremskrivninger (den nære fremtids markeder, nationale 2020-planer), der ikke tjener andre formål end at administrere og udbrede den verserende undtagelsestilstand, ønsker Center for Militant Futurologi at strække vores perspektiver til det yderste. Fordi vi har brug for nye radikale visioner, fordi lange fremskrivninger presser vores forestillingsevne til det muliges grænser.</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Dette er netop formålet med 2121 PLANEN. Eksperimentet er utopisk, det kredser om året 2121, og det spørger til vores begær om fremtiden: hvordan kunne vi drømme om, at verden tager sig ud til den tid?</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Vi er på jagt efter korte bidrag på ca. 1-2 sider, der tegner konturerne af et utopisk samfund lidt mere end 100 år fra nu. Vi forestiller os at I søger at svare på spørgsmål som: Hvordan er verden indrettet til den tid? Hvordan lever vi sammen? Hvordan bor vi? Hvor har teknologien bragt os hen, eller hvor har vi bragt teknologien hen? Hvad er vores forhold til naturen? Andre spørgsmål kunne kredse om kunst og kultur, om økonomi, om krop og køn og så videre. Selve formen er fri, send os prosa, poesi, tatovering, gif, jpg, landskab, lyd, ritual).</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Mens vi i dag i stigende grad står klemt mellem totalitær realisme og uhæmmet destruktion er vores håb og ønske, at vi med 2121 PLANEN kan genoplive vores futuristiske forestillingsevne og kollektive tro på fremtiden som noget lyst og lykkebringende, at vi formår at tegne nye utopiske horisonter, vi kan navigere efter. Drøm fremtiden!</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>På tværs af tid og rum,</p>
+          <p class="noindent">Center for Militant Futurologi</p>
+        </div>
+
+
+
+        <div id="contents"  class="text" flex-gt-md="40" style="margin: 0 0 0 5%">
+          <h1>Intro</h1>
+
+          <p>Vi inviterer alle med håb og drømme for fremtiden til en kollektiv tidsrejse. Vi inviterer alle til at bidrage med deres vildeste visioner for, hvordan verden kunne tage sig ud i år 2121.</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Mens stater og finansielle aktører opererer med korte mekaniske fremskrivninger (den nære fremtids markeder, nationale 2020-planer), der ikke tjener andre formål end at administrere og udbrede den verserende undtagelsestilstand, ønsker Center for Militant Futurologi at strække vores perspektiver til det yderste. Fordi vi har brug for nye radikale visioner, fordi lange fremskrivninger presser vores forestillingsevne til det muliges grænser.</p>
+        </div>
+
+
+    </div>
+
 
   <!-- Scripts -->
   <script src="node_modules/angular/angular.min.js"></script>
