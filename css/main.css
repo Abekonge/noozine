@@ -12,19 +12,53 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size:3rem;
+  font-size:5rem;
 }
+
+/*Name: Heading 1*/
+/*#intro h1 {
+	font-family: "CMU Sans Serif", serif;
+	font-style:normal;
+	font-weight:700;
+	font-size:5rem;
+	line-height: 1.33;
+	color:#000;
+	/*margin:1em 0 0 0;
+}
+
+/*Name: Heading 2*/
+/*#intro h2 {
+	font-family: "CMU Sans Serif", serif;
+	font-style:normal;
+	font-weight:700;
+	font-size:2.3em;
+	line-height: 1.35;
+	color:#000;
+	margin:1em 0 0 0;
+}*/
 
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  text-align:justify;
 }
 
-/*div.text {
-  margin:0.5rem;
-}*/
+/*Name: Body text*/
+#intro p {
+	font-family: "CMU Sans Serif", sans-serif;
+	font-style:normal;
+	font-weight:400;
+	line-height: 1.54;
+	color:#000;
+	/*margin: 1.5em 0 0 0;*/
+	hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+}
+
+div.text {
+  padding-top:1rem;
+}
 
 .noindent {
   text-indent:0;
@@ -102,4 +136,64 @@ p.empty-paragraph {
 /*This removes first line indent from paragraphs that comes after empty paragraphs*/
 p.empty-paragraph + p {
 	text-indent: 0;
+}
+
+/*CMU SANS SERIF*/
+
+@font-face {
+	font-family:"CMU Sans Serif";
+	font-style:normal;
+	font-weight:400;
+	src : url("Fonts/cmusansserifroman.otf");
+}
+
+@font-face {
+	font-family: "CMU Sans Serif";
+	font-style:italic;
+	font-weight:400;
+	src : url("Fonts/cmusansserifoblique.otf");
+}
+
+@font-face {
+	font-family: "CMU Sans Serif";
+	font-style:normal;
+	font-weight:700;
+	src : url("Fonts/cmusansserifboldex.otf");
+}
+
+@font-face {
+	font-family: "CMU Sans Serif";
+	font-style:italic;
+	font-weight:700;
+	src : url("Fonts/cmusansserifboldexoblique.otf");
+}
+
+/*CMU SERIF*/
+
+@font-face {
+	font-family:"CMU Serif";
+	font-style:normal;
+	font-weight:400;
+	src : url("Fonts/cmuserifroman.otf");
+}
+
+@font-face {
+	font-family: "CMU Serif";
+	font-style:italic;
+	font-weight:400;
+	src : url("Fonts/cmuserifitalic.otf");
+}
+
+@font-face {
+	font-family: "CMU Serif";
+	font-style:normal;
+	font-weight:700;
+	src : url("Fonts/cmuserifboldex.otf");
+}
+
+@font-face {
+	font-family: "CMU Serif";
+	font-style:italic;
+	font-weight:700;
+	src : url("Fonts/cmuserifboldexitalic.otf");
 }
