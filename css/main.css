@@ -67,8 +67,9 @@ div.text {
 }
 
 #intro p.toc-item-h1 {
-  text-indent:0;
-  font-weight:700;
+  text-indent:0rem;
+  /*font-weight:700;*/
+  /*padding-left:1.5rem;*/
 }
 
 a {
