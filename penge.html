@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+       /**
+        * Hide when Angular is not yet loaded and initialized
+        */
+       [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+         display: none !important;
+       }
+   </style>
+</head>
+  <body flex layout="column" ng-app="noozine" ng-controller="zineController">
+
+    <div flex="noshrink" layout="row" style="background-color:black;" >
+      <div flex id="intro" class="text" style="padding-left:1rem; margin-bottom:1.5rem;" layout="column"  layout-align="center center" >
+        <p style="text-align:right; color:white;">Penge / Rasmus P</p>
+      </div>
+    </div>
+
+    <img style="width:100%;" src="penge.jpg">
+
+    <div flex="noshrink" layout="row" style="background-color:black;" >
+
+      <div flex id="intro" class="text" style="padding-left:1rem; margin-bottom:1.5rem;" layout="column"  layout-align="center start" >
+        <p style="text-align:right; color:white;">forrige: <a style="color:white;" href="noter.html">Noter fra det 15. f&#230;llesr&#229;d i den frie neo-hanseatiske republik Svendborg</a></p>
+      </div>
+
+      <div flex id="intro" class="text" style="padding-right:1rem; margin-bottom:1.5rem;" layout="column" layout-align="center end" >
+        <p style="text-align:right; color:white;">næste: <a style="color:white;" href="arkivnotat.html">Arkivnotat #104.783T</a></p>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="js/noozine.js"></script>
+  </body>
+  </html>
