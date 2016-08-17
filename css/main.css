@@ -8,13 +8,15 @@ h1.title {
   font-weight: 900;
   font-size:15rem;
   color:white;
+  line-height:1;
 }
 
-h1.subtitle {
+.subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size:5rem;
+  font-size:6.9rem;
   color:white;
+  line-height: 1;
 }
 
 p.title {
@@ -24,10 +26,23 @@ p.title {
 }
 
 p.scroll {
-  font-family: "Roboto condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 2rem;
 }
+
+a.icon2121, a.icon2121:visited, a.icon2121:link {
+  font-family:'Prime';
+  color:white;
+  text-decoration: none;
+  font-size:1.5rem;
+}
+
+a.icon2121:hover {
+  text-decoration: underline;
+}
+
+/*.2121icon:hover {}*/
 
 /*Name: Heading 1*/
 h1 {
@@ -149,7 +164,7 @@ em {
 
 /*This makes first line indents on paragraphs that follows paragraphs. And removes the margin-top.*/
 p + p {
-	text-indent: 1.5rem;
+	/*text-indent: 1.5rem;*/
 	margin-top: 0;
 }
 
