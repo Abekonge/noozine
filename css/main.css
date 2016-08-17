@@ -7,7 +7,7 @@ h1.title {
   font-family: "Prime", sans-serif;
   font-weight: 900;
   font-size:15rem;
-  color:white;
+  color:black;
   line-height:1;
 }
 
@@ -15,7 +15,7 @@ h1.title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size:6.9rem;
-  color:white;
+  color:black;
   line-height: 1;
 }
 
@@ -29,6 +29,15 @@ p.scroll {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 2rem;
+  color:white;
+}
+
+em {
+  font-style: italic;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
 
 a.icon2121, a.icon2121:visited, a.icon2121:link {
@@ -42,7 +51,6 @@ a.icon2121:hover {
   text-decoration: underline;
 }
 
-/*.2121icon:hover {}*/
 
 /*Name: Heading 1*/
 h1 {
