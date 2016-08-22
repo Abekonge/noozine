@@ -19,6 +19,15 @@ h1.title {
   line-height: 1;
 }
 
+.meta {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size:4rem;
+  color:white;
+  line-height: 1;
+  margin:5%;
+}
+
 p.title {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
