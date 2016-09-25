@@ -1,0 +1,14 @@
+Stack:
+  1. Run a reverse proxy with nginx that
+  2. redirects futurologi.org/2121 to static node.js server with noozine #1 in docker container.
+  3. everything else to wordpress server in docker containe1.
+
+boom.
+
+Recipe:
+  1. Set up static node.js server docker image and run it to localhost:2121
+  2. Set up wordpress docker image with the exported futurologi.wordpress.com and run it to localhost:8080
+  3. Set up docker image with reverse proxy with nginx that serves localhost to wordpress, localhost/2121 to noozine#1
+  4. Get Hertzner server, setup the docker images. test it with ip-addresses.
+  5. Associate futurologi.org with hertzner ip.
+  6. Succes.
