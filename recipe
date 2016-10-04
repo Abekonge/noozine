@@ -12,3 +12,21 @@ Recipe:
   4. Get Hertzner server, setup the docker images. test it with ip-addresses.
   5. Associate futurologi.org with hertzner ip.
   6. Succes.
+
+
+Guide: https://www.upcloud.com/support/wordpress-with-docker/
+
+  DETAILS
+    Wordpress database
+      Docker image mariadb, name wordpressdb, host-path /arkiv/noozineDEV/wordpress/database, guest-path var/lib/mysql, database-name wordpress, database-password balmitontheboggie
+
+    Spin up database command
+      docker run -e MYSQL_ROOT_PASSWORD=balmitontheboggie -e MYSQL_DATABASE=wordpress --name wordpressdb -v /arkiv/noozineDEV/wordpress/database:/var/lib/mysql -d mariadb:latest
+
+    Spin up wordpress command
+      docker run -e WORDPRESS_DB_PASSWORD=balmitontheboggie --name wordpress --link wordpressdb:mysql -p 127.0.0.1:80:80 -v /arkiv/noozineDEV/wordpress/html:/var/www/html -d wordpress
+
+    SHIT WORKS!
+
+    IMPORT WORDPRESS
+    https://www.siteground.com/tutorials/wordpress/transfer-wordpress/  

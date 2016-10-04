@@ -1,0 +1,16 @@
+make local node+express server in a docker env.
+	Routing:
+	Serve / to local wordpress (maybe hosted in container)
+	serve /2121 to noozine.
+
+Setup wordpress and shit.
+
+commit all this to the same docker container. Make into an image.
+
+spin up 2121 docker image on cheap hertzner server.
+
+Change dns and stuff on futurologi.org.
+
+WIn
+
+WORK
