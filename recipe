@@ -29,4 +29,9 @@ Guide: https://www.upcloud.com/support/wordpress-with-docker/
     SHIT WORKS!
 
     IMPORT WORDPRESS
-    https://www.siteground.com/tutorials/wordpress/transfer-wordpress/  
+    https://www.siteground.com/tutorials/wordpress/transfer-wordpress/
+
+
+NGINX Begiiners guide http://nginx.org/en/docs/beginners_guide.html#conf_structure
+  config file is
+    /etc/nginx/nginx.conf
