@@ -6,6 +6,8 @@
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <style type="text/css">
        /**
         * Hide when Angular is not yet loaded and initialized
@@ -15,21 +17,108 @@
        }
    </style>
 </head>
-<body flex layout="column" ng-app="noozine">
+<body flex layout="column" ng-app="noozine" ng-controller="zineController">
 
-  <p flex="10" layout layout-align="center center" style="background-color:blue;">CMF & Junkie McGregor præsenterer</p>
+  <md-content>
+</md-content>
+    <p class="title" flex="noshrink" layout layout-align="center center" style="background-color:#009900; color:white; height:5%;"><strong>Center for Militant Futurologi</strong></p>
+    <p class="title" flex="noshrink" layout layout-align="center center" style="background-color:#0000cc; height:5%; color:white;"><strong>noozine#1</strong></p>
 
-  <h1 flex layout="column" layout-align="center center" ng-model="$scope.year" style="font-size:10rem;background-color:green;">2016</h1>
+    <div flex="noshrink" layout="column" layout-align="center center" style="background-color:#9966ff; height:80%;">
+      <h1 class="title">2121</h1>
+      <h1 class="subtitle">PLANEN</h1>
+    </div>
 
-  <div flex="10" layout="column" layout-align="center center" style="background-color:green;">
-    <p style="font-size:2rem; font-weight:bold"> | </p>
-    <p> scroll </p>
-  </div>
+    <div flex="noshrink" layout="column" layout-align="center center" style="background-color:#9966ff;  height:10%;">
+      <p class="noindent scroll" style="font-family: 'CMU Sans Serif'; font-size:2rem; font-weight:bold"> | </p>
+      <p class="noindent scroll"> <strong>rul</strong> </p>
+    </div>
+
+    <div id="frontmatter" flex="noshrink" layout="row" layout-align="center center" style="background-color:#ff9900" >
+
+        <div id="intro" class="text" flex-gt-md="50" flex-md="60" flex-gt-xs="90" flex-xs="90" >
+          <h1>Intro</h1>
+
+          <p><em>I 2015 udstrålede Center for Militant Futurologi følgende meddelelse:</em></p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Vi inviterer alle med håb og drømme for fremtiden til en kollektiv tidsrejse. Vi inviterer alle til at bidrage med deres vildeste visioner for, hvordan verden kunne tage sig ud i år 2121.</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Mens stater og finansielle aktører opererer med korte mekaniske fremskrivninger (den nære fremtids markeder, nationale 2020-planer), der ikke tjener andre formål end at administrere og udbrede den verserende undtagelsestilstand, ønsker Center for Militant Futurologi at strække vores perspektiver til det yderste. Fordi vi har brug for nye radikale visioner, fordi lange fremskrivninger presser vores forestillingsevne til det muliges grænser.</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Dette er netop formålet med 2121 PLANEN. Eksperimentet er utopisk, det kredser om året 2121, og det spørger til vores begær om fremtiden: hvordan kunne vi drømme om, at verden tager sig ud til den tid?</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Vi er på jagt efter korte bidrag på ca. 1-2 sider, der tegner konturerne af et utopisk samfund lidt mere end 100 år fra nu. Vi forestiller os at I søger at svare på spørgsmål som: Hvordan er verden indrettet til den tid? Hvordan lever vi sammen? Hvordan bor vi? Hvor har teknologien bragt os hen, eller hvor har vi bragt teknologien hen? Hvad er vores forhold til naturen? Andre spørgsmål kunne kredse om kunst og kultur, om økonomi, om krop og køn og så videre.</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>Mens vi i dag i stigende grad står klemt mellem totalitær realisme og uhæmmet destruktion er vores håb og ønske, at vi med 2121 PLANEN kan genoplive vores futuristiske forestillingsevne og kollektive tro på fremtiden som noget lyst og lykkebringende, at vi formår at tegne nye utopiske horisonter, vi kan navigere efter. Drøm fremtiden!</p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p>På tværs af tid og rum,</p>
+          <p class="noindent">Center for Militant Futurologi</p>
+          <p class="empty-paragraph">&nbsp;</p>
+
+          <p><em>Dette zine rummer de svar vi modtog.</em></p>
+
+          <p class="empty-paragraph">&nbsp;</p>
+
+        </div>
+    </div>
+
+    <div flex="noshrink" layout="row" layout-align="center center" style="background-color:#ff0000" >
+
+        <div id="toc" class="text" flex-gt-md="50" flex-md="60" flex-gt-xs="90" flex-xs="90">
+          <h1>Indhold</h1>
+
+
+          <p class="toc-item-h1"><strong><a href="noter.html">Noter fra det 15. f&#230;llesr&#229;d i den frie neo-hanseatiske republik Svendborg</a></strong> /&nbsp;Frisk Flugt</p>
+
+
+          <p class="toc-item-h1"><strong><a href="penge.html">Penge</a></strong> / Rasmus P</p>
+
+
+          <p class="toc-item-h1"><strong><a href="arkivnotat.html">Arkivnotat #104.783T</a></strong> /&nbsp;Amanda Schou</p>
+
+
+          <p class="toc-item-h1"><strong><a href="foreningsoversigt.html">Foreningsoversigt - Distrikt Aved&#248;re - Januar 2121</a></strong> /&nbsp;Tine Tveergaard</p>
+
+
+          <p class="toc-item-h1"><strong><a href="alten.html">Alten</a></strong> /&nbsp;David Walther Birk</p>
+
+
+          <p class="toc-item-h1"><strong><a href="udentitelrasmusgraff.html">Uden titel</a></strong> /&nbsp;Rasmus Graff</p>
+
+          <p class="toc-item-h1"><strong><a href="udentitelkristianbyskov.html">Uden titel</a></strong> /&nbsp;Kristian Byskov</p>
+
+          <p class="toc-item-h1"><strong><a href="isthisthefuture.html">Is this the future</a></strong> /&nbsp;Tobias Ewe</p>
+
+          <p class="toc-item-h1"><strong><a href="meta.html">Meta</a></strong></p>
+          <p class="empty-paragraph">&nbsp;</p>
+        </div>
+    </div>
+
+    <div flex="noshrink" layout="row" layout-align="end center" style="background-color:black;" >
+
+        <div id="intro" class="text" flex-gt-md="50" flex-md="60" flex-gt-xs="90" flex-xs="90" style="padding-right:1rem; margin-bottom:1.5rem;">
+          <p style="text-align:right; color:white;">næste: <a style="color:white;" href="noter.html">Noter fra det 15. f&#230;llesr&#229;d i den frie neo-hanseatiske republik Svendborg</a></p>
+        </div>
+    </div>
+
 
   <!-- Scripts -->
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-animate/angular-animate.js"></script>
   <script src="node_modules/angular-aria/angular-aria.js"></script>
   <script src="node_modules/angular-material/angular-material.js"></script>
+  <script src="js/noozine.js"></script>
 </body>
 </html>
