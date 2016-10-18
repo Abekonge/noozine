@@ -25,7 +25,20 @@ h1.title {
   font-size:4rem;
   color:white;
   line-height: 1;
-  margin:5% 5% 5% 8%;
+  padding:5% 5% 5% 8%;
+}
+
+.meta-shout {
+  font-size:6.2rem;
+}
+
+@media (max-width: 900px) {
+  .meta {
+    font-size: 2rem;
+  }
+  .meta-shout {
+    font-size: 3rem;
+  }
 }
 
 p.title {
