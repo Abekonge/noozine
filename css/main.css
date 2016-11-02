@@ -76,7 +76,7 @@ a.icon2121:hover {
 
 /*Name: Heading 1*/
 h1 {
-  font-family: "Roboto", sans-serif
+  font-family: "Roboto", sans-serif;
 	font-style:normal;
 	font-weight:700;
 	font-size:3rem;
@@ -86,7 +86,7 @@ h1 {
 
 /*Name: Heading 2*/
 h2 {
-  font-family: "Roboto", sans-serif
+  font-family: "Roboto", sans-serif;
 	font-style:normal;
 	font-weight:700;
 	font-size:1.5rem;
